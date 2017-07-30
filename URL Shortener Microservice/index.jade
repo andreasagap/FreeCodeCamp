@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title Welcome to Glitch!
+    meta(name='description', content='A cool thing made with Glitch')
+    link#favicon(rel='icon', href='https://glitch.com/edit/favicon-app.ico', type='image/x-icon')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', rel='stylesheet')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  body
+    header
+      h1
+        | URL Shortener Microservice
+      h4 Example Creation Usage:
+      p
+        code
+          | https://plaid-panty.glitch.me/new/https://www.google.com
+      h4 Your new Url:
+        a(href="#{short_url}") #{short_url}
+      br
+      h3 #{error}
+  style.
+     
+      input{
+          display: block;
+          margin-bottom: 1px;
+          padding: 5px;
+          width: 50%;
+          border: 1px solid lightgrey;
+          border-radius: 3px;
+          font-size: 16px;
+      }
+      h1,h4,p,h3,a{
+         text-align: center;
+      }
+  footer(style='text-align: center')
+    a(href='https://github.com/andreasagap')
+      i.fa.fa-github(style='font-size:48px;color:black', aria-hidden='true')
+    br
