@@ -1,0 +1,31 @@
+html
+    head
+        title The Image Seeker
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel='stylesheet', href='/style.css')
+        link(href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato", rel="stylesheet", type='text/css')
+
+    div.container
+        h1.heading The Image Seeker
+        div.box
+            h2.heading Description
+            div.text-block
+                p.text A simple API service that can perform a search for images that are related to a given search phrase. Results are given in JSON format.
+                
+            h2.heading Example API Calls
+            div.text-block
+                p.code https://image-seeker.glitch.me/search/wizards?offset=1
+                
+            h2.heading Example Response
+            div.text-block
+                p.code [{"url":"https://www.thesorceryblog.com/powerfulwizard.jpg", "snippet":"Wizards of Wizard Quest", "thumbnail":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQyv", "context":"https://www.thesorceryblog.com"}, <br /><br /> ....... <br /><br />#[em and 9 more relevant images]<br /><br /> ....... ]
+            
+            h2.heading Search History
+            div.text-block
+                p.text Yep, you can also check out what all those other internet weirdos have been searching. Just hit:</br></br>
+                p.code https://image-seeker.glitch.me/history
+                
+    script(src="https://code.jquery.com/jquery-2.2.1.min.js", integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=", crossorigin="anonymous")
+    script(src='/client.js')
