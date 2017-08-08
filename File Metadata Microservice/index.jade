@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title File Metadata Microservice
+    // Bootstrap Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css')
+    script(src='https://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
+    style.
+        #rcorners1 {
+            border-radius: 5px;
+            background: #337ab7;
+            padding: 5px;
+            font-size:18px; 
+            width: auto;
+            height: auto;
+            color:#FFFFFF;
+            margin:0 auto;
+        }
+    body
+      main.container
+        div(style='text-align: center;')
+            h3 
+              #app-title.text-center File Metadata Microservice
+              form(method='post', action='/form',enctype='multipart/form-data')
+                  h4.text-center Step 1: upload file
+                  input#rcorners1(type="file", name="file")
+                  h4.text-center Step 2: get file size
+                  input.btn.btn-primary(type='submit', value='Get File Size')
+              .col-xs-12
+                h4.text-center Response: 
+                h1.text-center #{response}
+      footer.container
+        .row
+          #mysocial.col-xs-12.text-center
+            a(href='https://github.com/andreasagap', target='_blank')
+              i.fa.fa-github.fa-2x
+            a(href='https://www.linkedin.com/in/andreas-agapitos-91b340b2', target='_blank')
+              i.fa.fa-linkedin-square.fa-2x
+        .text-center
+          p
+            | For 
+            a(href='https://www.freecodecamp.com/challenges/file-metadata-microservice', target='_blank') Free Code Camp project
